@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
 ---
 
@@ -10,9 +12,7 @@ import "../styles/global.css";
     <title>Otto's Blog</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
-    <a href="/about/">About Me</a>
+    <Navigation />
 
     <h1>Otto's Blog</h1>
     <p>
@@ -24,5 +24,7 @@ import "../styles/global.css";
       <li><a href="/posts/post-2">Post 2</a></li>
       <li><a href="/posts/post-3">Post 3</a></li>
     </ul>
+
+    <Footer />
   </body>
 </html>
